@@ -1,7 +1,12 @@
-var score = 8
-console.log("Mid-level skills:",score > 0 && score < 10 )
+var age = 10;
+if(age>= 60){
+    console.log("O senhor recebe sua renda da sua pensão")
+}else if(age >65 || age >=18){
+    console.log("Each month you get a salary")
 
+} else if(age <18){
+    console.log("You get an allowance")
 
-var timeRemaining = 0
-var energy = 10
-console.log("Game over:", timeRemaining == 0 || energy == 0)
+}else{
+    console.log("The value of the age variable is not numerical")
+}
