@@ -39,3 +39,7 @@ var dog = {
 };
 dog["type"] = "corgi";
 console.log(dog)
+
+var latters = 'Matheus';
+
+console.log(latters.match(/a/))
