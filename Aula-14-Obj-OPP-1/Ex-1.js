@@ -9,10 +9,18 @@ function c( a, r){
 y = console.log(c(x,z))
 
 
-var globalVar = 77;
 
-function scopeTest() {
-    var localVar = 88;
+
+
+
+function meal(animal) {
+    animal.food = animal.food + 10;
 }
 
-console.log(localVar);
+var dog = {
+    food: 10
+};
+meal(dog);
+meal(dog);
+
+console.log(dog.food);
