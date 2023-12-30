@@ -30,3 +30,4 @@ let purchase3 = {
 }
 
 purchase3.totPrice();
+
