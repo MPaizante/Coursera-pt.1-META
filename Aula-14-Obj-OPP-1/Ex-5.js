@@ -55,5 +55,48 @@ class HighSpeedTrain extends Train {
         this.passengers = passengers;
         this.highSpeedOn = highSpeedOn;
     }
-
+    toggleHighSpeedOn(){
+        this.highSpeedOn = !this.highSpeedOn
+        console.log('High speed status: '+ this.highSpeedOn)
+    }
+    toggleLights(){
+        super.toggleLights();
+        super.lightsStatus();
+        console.log('Lights are 100% operational.')
+    }
 }
+var train5 = new Train('blue', false);
+var highSpeed1 = new HighSpeedTrain(200, false, 'green', false);
+console.log(train5.toggleLights()); 
+console.log(train5.lightsStatus());
+console.log(highSpeed1.toggleLights());
+
+
+
+class StationaryBike {
+    constructor(position, gears) {
+        this.position = position
+        this.gears = gears
+    }
+}
+
+class Treadmill {
+    constructor(position, modes) {
+        this.position = position
+        this.modes = modes
+    }
+}
+
+class Gym {
+    constructor(openHrs, stationaryBikePos, treadmillPos) {
+        this.openHrs = openHrs
+        this.stationaryBike = new StationaryBike(stationaryBikePos, 8)
+        this.treadmill = new Treadmill(treadmillPos, 5)
+    }
+}
+
+var boxingGym = new Gym("7-22", "right corner", "left corner")
+
+console.log(boxingGym.openHrs) 
+console.log(boxingGym.stationaryBike) 
+console.log(boxingGym.treadmill) 
