@@ -100,3 +100,8 @@ var boxingGym = new Gym("7-22", "right corner", "left corner")
 console.log(boxingGym.openHrs) 
 console.log(boxingGym.stationaryBike) 
 console.log(boxingGym.treadmill) 
+
+function withDefaultParams(number = 10) {
+    console.log('Result:', number * number)
+}
+withDefaultParams();
