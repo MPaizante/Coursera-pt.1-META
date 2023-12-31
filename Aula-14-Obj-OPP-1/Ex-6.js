@@ -1,99 +1,104 @@
-class Animal{
-    constructor(color,energy){
+class Animal {
+    constructor(color = 'yellow', energy = 100) {
         this.color = color;
         this.energy = energy;
     }
-    isActive(){
-        if (energy > 0){
-            energy -= 20 
-            console.log(this.energy)
-        } else if(this.energy <=0){
-            this.slepp();
-
+    isActive() {
+        if(this.energy > 0) {
+            this.energy -= 20;
+            console.log('Energy is decreasing, currently at:', this.energy)
+        } else if(this.energy == 0){
+            this.sleep();
         }
     }
-    slepp(){
+    sleep() {
         this.energy += 20;
-        console.log(this.energy);
+        console.log('Energy is increasing, currently at:', this.energy)
     }
-    getColor(){
-        console.log(this.color);
+    getColor() {
+        console.log(this.color)
     }
 }
-class Cat extends Animal{
-    constructor(sound = 'purr', canJumpHigh = true, canClimbTrees = true, color, energy){
-        this.sound = sound;
-        this.canJumpHigh = canJumpHigh;
-        this.canClimbTrees = canClimbTrees;
+class Cat extends Animal {
+    constructor(sound = 'purr', canJumpHigh = true, canClimbTrees = true, color, energy) {
         super(color, energy);
+        this.sound = sound;
+        this.canClimbTrees = canClimbTrees;
+        this.canJumpHigh = canJumpHigh;
     }
-    makeSound(){
+    makeSound() {
         console.log(this.sound);
     }
 }
-class Bird extends Animal{
-    constructor(sound= ' chirp', canFly = true, color, energy){
+
+class Bird extends Animal {
+    constructor(sound = 'chirp', canFly = true, color, energy) {
+        super(color, energy);
         this.sound = sound;
         this.canFly = canFly;
-        super(color,energy)
     }
-    makeSound(){
-        console.log(this.sound)
+    makeSound() {
+        console.log(this.sound);
     }
 }
-class HouseCat extends Cat{
-    constructor(houseCatSound = 'meow', sound, canJumpHigh , canClimbTrees, color, energy ){     
+class HouseCat extends Cat {
+    constructor(houseCatSound = "meow", sound,canJumpHigh,canClimbTrees, color,energy) {
+        super(sound,canJumpHigh,canClimbTrees, color,energy);
         this.houseCatSound = houseCatSound;
-        super(sound,energy,canClimbTrees,canJumpHigh,color)
     }
-    makeSound(){
-        if(Option){
-            super.makeSound()
+    makeSound(option) {
+        if (option) {
+            super.makeSound();
         }
-        console.log(this.houseCatSound)
-    }   
-    
+        console.log(this.houseCatSound);
+    }
 }
-class Tiger extends Cat{
-    constructor(tigerSound = 'Roar', sound , canJumpHigh, canClimbTrees, color, energy){
+
+class Tiger extends Cat {
+    constructor(tigerSound = "Roar!", sound,canJumpHigh,canClimbTrees, color,energy) {
+        super(sound,canJumpHigh,canClimbTrees, color,energy);
         this.tigerSound = tigerSound;
-        super(sound, canClimbTrees,canJumpHigh,color, energy)
     }
-    makeSound(){
-        if(Option ){
-            super.makeSound()
+    makeSound(option) {
+        if (option) {
+            super.makeSound();
         }
-        console.log(this.tigerSound)
-    } 
+        console.log(this.tigerSound);
+    }
 }
-class Parrot extends Bird{
-    constructor(canTalk = false, sound , color ,energy){
+
+class Parrot extends Bird {
+    constructor(canTalk = false, sound,canFly, color,energy) {
+        super(sound,canFly, color,energy);
         this.canTalk = canTalk;
-        super(sound,color,energy)
     }
-    makeSound(){
-        if(Option ){
-            super.makeSound()
+    makeSound(option) {
+        if (option) {
+            super.makeSound();
         }
-        if(this.canTalk = true){
-            console.log('Talking!')
+        if (this.canTalk) {
+            console.log("I'm a talking parrot!");
         }
     }
 }
 
-let polly  = new Parrot(true);
-let fiji = new Parrot(false);
+var polly = new Parrot(true);
+var fiji = new Parrot(false); 
 
-polly.makeSound()
-fiji.makeSound()
-polly.color('yellow')
-polly.energy(100)
-polly.isActive()
+polly.makeSound(); 
+fiji.makeSound(); 
 
-let penguin = new Bird('Guts', false, 'Black and White', 200)
+polly.color;
+polly.energy; 
 
-polly.makeSound()
-fiji.makeSound()
-polly.color('yellow')
-polly.energy(100)
-polly.isActive()
+polly.isActive(); 
+
+var penguin = new Bird("shriek", false, "black and white", 200); 
+penguin; 
+
+penguin.sound; 
+penguin.canFly; 
+penguin.color; 
+penguin.energy; 
+penguin.isActive(); 
+
