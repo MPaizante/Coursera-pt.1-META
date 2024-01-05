@@ -1,15 +1,9 @@
 
-class Person {
-    sayHello() {
-        console.log("Hello");
-    }
+function scopeTest() {
+    var y = 44;
+
+    console.log(x);
 }
 
-class Friend extends Person {
-    sayHello() {
-        console.log("Hey");
-    }
-}
-
-var result = new Friend();
-result.sayHello();
+var x = 33;
+scopeTest();
