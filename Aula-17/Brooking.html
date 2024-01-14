@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv=" refresh" content="30"> 
+    <meta charset="UTF-8">
+    <meta name="language" content="english">
+    <meta name="robots" content="index,follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:tittle" content="My First Web Page"
+    <title>Little Lemon</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <style>
+        body{
+            background-color: aqua;
+            text-align: center;
+        }
+    </style>
+    <header>
+        <img src="cat-8361048_640.jpg" alt="">
+    </header>   
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Blog</h1>
+        <article>
+            <h2>20% off this weekend</h2>
+            <p>Come down to Little Lemon and your meal will be 20% off!</p>
+        </article>
+        <article>
+                <h2>Our new menu</h2>
+                <p>We've updated our menu with new dinners.</p>
+        </article>
+        <form action="" method="post">
+            <div>
+                <label for="booking_date">Booking Date</label>
+                <input type="date" name="booking_date" id="booking_date">
+            </div>
+
+            <div>
+                <label for="brooking_people">Number of People</label>
+                <input type="range" name="booking_people" id="booking_people" min="1" max="10" value="4" oninput="this.nextElementSibling.value = this.value">
+                <output>4</output>
+            </div>
+
+            <div>
+                <label for="brooking_location">Location</label>
+               <input id="brooking_location" name="brooking_location" list="locations"> 
+               <datalist id="locations">
+                    <option value="Downtown"></option>
+                    <option value="Uptown"></option>
+               </datalist>
+            </div>
+
+            <div>
+                <button type="submit">Book Table</button>
+            </div>
+    </main>
+
+    <footer>
+        <p>Copyright Little Lemon</p>
+    </footer>
+</body>
+</html>
