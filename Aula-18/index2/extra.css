@@ -1,0 +1,11 @@
+body{
+    display: grid;
+    height: 150vh;
+    grid-template-rows: auto 1fr auto;
+}
+header{
+    color: aliceblue;
+    background-color: rgb(148, 96, 96);
+    text-align: center;
+    padding: 2em;
+}
