@@ -4,6 +4,7 @@ body{
     margin: 3rem;
     margin-left: 5%;
     margin-right: 5%;
+    text-align: center;
 
 }
 h2{
@@ -38,10 +39,13 @@ section{
 article > img{
     width: 300px;
     height: 200px;
+    
 }
 article{
     flex: 1;
     background-color: #F4E5D6;
+    margin-right: 10px;
+    border-radius: 10px;
 
 }
 p{
@@ -54,7 +58,31 @@ footer{
 footer img{
     width: 50px;
     height: 80px;
+    margin-right: 800px;
 }
 footer div{
     flex: 1;
+}
+.lasagna{
+    flex: 1;
+    position: relative;
+ 
+}
+.lasagna img{
+    border-radius: 10px;
+    width: auto;
+    
+    
+}
+.text{
+    position: absolute;
+    top: 10%;
+    left: 24%;
+    transform: translate(-20%, -50%);
+    z-index: 1;
+    color: white;
+    font-size: 60px;
+    font-weight: 900;
+    -webkit-text-fill-color: #a3d8c6;
+    -webkit-text-stroke: 3px #a3d8c6;
 }
