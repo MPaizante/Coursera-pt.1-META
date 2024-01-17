@@ -4,7 +4,7 @@
 
     }
     to{
-        transform: translate3d(640px, 0 , 0);
+        transform: translate3d(1000px , 0 , 0);
     }
 }
 
@@ -13,8 +13,10 @@
     height: 80px;
     border-radius: 50%;
     background-color: black;
+    
 
-    animation: bounce 2s;
+    animation: bounce 2s ;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
