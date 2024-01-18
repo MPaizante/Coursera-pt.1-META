@@ -1,88 +1,107 @@
-body{
-    background-color: rgba(105, 233, 0, 0.267);
-    font-family: 'Times New Roman', Times, serif;
-    margin: 3rem;
+body {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     margin-left: 5%;
     margin-right: 5%;
+    background-color: #d2d8d5;
+
+  }
+  
+  h1 {
+    font-size: 3rem;
     text-align: center;
-
-}
-h2{
+  }
+  
+  h2 {
     font-size: 2rem;
-}
-header > img{
+    text-align: center;
+  }
+  
+  header > img {
     display: block;
-    margin: auto;
-    width: 800px;
-}
-nav > div{
-    background-color: #333333;
-    border-radius: 5px;
-}
-
-ul{
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+  }
+  
+  nav {
+    
+    height: 5rem;
+    border-radius: 1rem;
+  }
+  
+  nav ul {
     list-style: none;
     text-align: center;
-}
-li{
-    display: inline-block;
-    margin-left: 80px;
-    margin-right: 80px;
-}
-a{
-    text-decoration: none;
-    color: #a3d8c6;
-}
-section{
-    display: flex;
-}
-article > img{
-    width: 300px;
-    height: 200px;
-    
-}
-article{
-    flex: 1;
-    background-color: #F4E5D6;
-    margin-right: 10px;
-    border-radius: 10px;
-
-}
-p{
-    text-align: left;
-}
-
-footer{
-    display: flex;
-}
-footer img{
-    width: 50px;
-    height: 80px;
-    margin-right: 800px;
-}
-footer div{
-    flex: 1;
-}
-.lasagna{
-    flex: 1;
     position: relative;
- 
-}
-.lasagna img{
-    border-radius: 10px;
-    width: auto;
-    
-    
-}
-.text{
-    position: absolute;
-    top: 10%;
-    left: 24%;
-    transform: translate(-20%, -50%);
-    z-index: 1;
+
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  nav li a {
     color: white;
-    font-size: 60px;
-    font-weight: 900;
-    -webkit-text-fill-color: #a3d8c6;
-    -webkit-text-stroke: 3px #a3d8c6;
-}
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  nav li a:hover {
+    text-decoration: underline;
+    color: #bcc5c0;
+  }
+  nav div{
+    background-color: gray;
+    border-radius: 10px;
+  }
+  
+  main {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  main > section:first-child {
+    background-image: url("images/succulent-unsplash.jpg");
+    background-size: cover;
+    background-position: center 30%;
+    border-radius: 1rem;
+    color: rgb(245, 160, 160);
+    min-height: 15rem;
+  }
+  
+  section {
+    display: flex;
+  }
+  
+  article {
+    flex: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 10px;
+    background-color: rgb(233, 219, 202);
+    border-radius: 10px;
+  }
+  
+  article img {
+    width: 100%;
+  }
+  
+  footer {
+    display: flex;
+  }
+  
+  footer div {
+    flex: 1;
+  }
+  
+  footer div img {
+    width: 50px;
+  }
+  
+  footer div p {
+    text-align: right;
+    border-top: 1px solid black;
+  }
